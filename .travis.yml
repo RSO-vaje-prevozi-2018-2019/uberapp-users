@@ -14,7 +14,7 @@ cache:
   - $HOME/.m2
 
 env:
-  - DOCKER_IMAGE=glumac/uberapp:0.1
+  - DOCKER_IMAGE=glumac/uberapp-users:0.1
 
 script:
   - mvn clean package -U

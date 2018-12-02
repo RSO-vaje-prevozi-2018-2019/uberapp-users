@@ -1,0 +1,4 @@
+INSERT INTO app_user (date_of_birth, first_name, last_name, status, last_logged_in, email, message_group_id) VALUES (TIMESTAMP '1962-12-01 00:00:00', 'James', 'Smith', 'Active', TIMESTAMP '2018-02-04 10:00:00','james.smith@test.com',0);
+INSERT INTO app_user (date_of_birth, first_name, last_name, status, last_logged_in, email, message_group_id) VALUES (TIMESTAMP '1945-04-16 00:00:00', 'Joseph', 'Smith', 'Active', TIMESTAMP '2018-04-04 18:03:00','joseph.smith@test.com',0);
+INSERT INTO app_user (date_of_birth, first_name, last_name, status, last_logged_in, email, message_group_id) VALUES (TIMESTAMP '1986-07-24 00:00:00', 'Alice', 'Blackwood', 'Active', TIMESTAMP '2018-07-08 19:19:00','alice.blackwood@test.com',0);
+INSERT INTO app_user (date_of_birth, first_name, last_name, status, last_logged_in, email, message_group_id) VALUES (TIMESTAMP '1989-09-01 00:00:00', 'Jim', 'Bob', 'Active', TIMESTAMP '2018-01-14 01:10:22','jim.bob@test.com',0);

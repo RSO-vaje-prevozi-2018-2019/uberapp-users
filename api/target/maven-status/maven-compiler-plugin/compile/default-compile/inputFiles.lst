@@ -1,0 +1,8 @@
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/UserApplication.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/interceptors/LogContextInterceptor.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/dtos/HealthDto.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/resources/CustomersResource.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/dtos/LoadDto.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/resources/UserResource.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/dtos/ApiError.java
+/Users/matjazglumac/Documents/faks2018_2019/RSO/startOver/api/src/main/java/si/fri/rso/samples/customers/api/v1/health/MockHealthCheck.java
