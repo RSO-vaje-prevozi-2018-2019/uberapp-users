@@ -1,8 +1,0 @@
-si/fri/rso/samples/customers/api/v1/resources/UserResource.class
-si/fri/rso/samples/customers/api/v1/dtos/HealthDto.class
-si/fri/rso/samples/customers/api/v1/dtos/LoadDto.class
-si/fri/rso/samples/customers/api/v1/UserApplication.class
-si/fri/rso/samples/customers/api/v1/health/MockHealthCheck.class
-si/fri/rso/samples/customers/api/v1/resources/CustomersResource.class
-si/fri/rso/samples/customers/api/v1/dtos/ApiError.class
-si/fri/rso/samples/customers/api/v1/interceptors/LogContextInterceptor.class
