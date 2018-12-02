@@ -1,5 +1,5 @@
 kumuluzee:
-  name: uberapp-users
+  name: rso-customers
   env:
     name: dev
   version: 1.0.0
@@ -8,19 +8,17 @@ kumuluzee:
     http:
       port: 8080
   datasources:
-    - jndi-name: jdbc/CustomerDS
-#      connection-url: jdbc:postgresql://localhost:5433/postgres
-#      connection-url: jdbc:postgresql://192.168.99.100:5433/user
+    - jndi-name: jdbc/CustomersDS
+#      connection-url: jdbc:postgresql://192.168.99.100:5432/customer
       connection-url: jdbc:postgresql://sl-eu-gb-p00.dblayer.com:15468/compose
 #      username: dbuser
-#      password: postgres
       username: admin
-
+#      password: postgres
       max-pool-size: 20
   health:
     checks:
       data-source-health-check:
-        jndi-name: jdbc/CustomerDS
+        jndi-name: jdbc/CustomersDS
   config:
     etcd:
       hosts: http://192.168.99.100:2379
@@ -30,7 +28,7 @@ kumuluzee:
   metrics:
     web-instrumentation:
     - name: customers-endpoint
-      url-pattern: /v1/users/*
+      url-pattern: /v1/customers/*
   logs:
     config-file: '<?xml version="1.0" encoding="UTF-8"?>
                     <Configuration name="customers">
