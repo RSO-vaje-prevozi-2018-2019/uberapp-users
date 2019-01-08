@@ -58,6 +58,19 @@ public class UserResource {
     }
 
     @GET
+    @Path("randomU")
+    public Response getRandomUser() {
+
+        int userId = usersBean.getRandomId();
+
+        if (userId < 1) {
+            return Response.status(Response.Status.INTERNAL_SERVER_ERROR).entity(userId).build();
+        }
+
+       return this.getUser(userId);
+    }
+
+    @GET
     @Path("/{userId}")
     public Response getUser(@PathParam("userId") Integer userId) {
 
@@ -89,35 +102,5 @@ public class UserResource {
 
 
 
-    @GET
-    @Path("info")
-    public Response info() {
 
-        JsonObject json = Json.createObjectBuilder()
-                .add("clani", Json.createArrayBuilder().add("mg5331").add("ms4388"))
-                .add("opis_projekta", "Aplikacija za namen iskanja in ponujanja prevozov. Ponudnik storitev ponudi svoj prevoz na neki začetki točki in sopotniki se pridružijo temu prevozu, če jih prevoznih sprejme. ")
-                .add("mikrostoritve", Json.createArrayBuilder().add("http://35.204.91.158:8081/v1/orders"))
-                .add("github", Json.createArrayBuilder().add("https://github.com/RSO-vaje-prevozi-2018-2019/uberapp"))
-                .add("travis", Json.createArrayBuilder().add("https://travis-ci.com/RSO-vaje-prevozi-2018-2019/uberapp"))
-                .add("dockerhub", Json.createArrayBuilder().add("https://hub.docker.com/r/glumac/uberapp/"))
-                .build();
-
-
-        return Response.ok(json.toString()).build();
-    }
-
-    @GET
-    @Path("test")
-    public Response test() {
-
-        JsonObject json = Json.createObjectBuilder()
-                .add("clani", Json.createArrayBuilder().add("mg5331"))
-                .build();
-        return Response.ok(json.toString()).build();
-    }
-
-    private long fibonacci(int n) {
-        if (n <= 1) return n;
-        else return fibonacci(n - 1) + fibonacci(n - 2);
-    }
 }

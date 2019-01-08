@@ -7,6 +7,7 @@ import org.eclipse.microprofile.metrics.annotation.Timed;
 import si.fri.rso.samples.customers.models.dtos.Order;
 import si.fri.rso.samples.customers.models.entities.User;
 import si.fri.rso.samples.customers.services.configuration.AppProperties;
+import si.fri.rso.samples.customers.services.configuration.CustomProperties;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
@@ -38,6 +39,9 @@ public class UsersBean {
     private AppProperties appProperties;
 
     @Inject
+    CustomProperties customProperties;
+
+    @Inject
     private UsersBean usersBean;
 
     private Client httpClient;
@@ -46,6 +50,10 @@ public class UsersBean {
     private void init() {
         httpClient = ClientBuilder.newClient();
 //        baseUrl = "http://localhost:8081"; // only for demonstration
+    }
+
+    public int getRandomId() {
+        return customProperties.getMyRandomNumber();
     }
 
 

@@ -55,3 +55,6 @@ app-properties:
   external-services:
     enabled: false
   healthy: true
+
+custom-properties:
+  show-user: 3
