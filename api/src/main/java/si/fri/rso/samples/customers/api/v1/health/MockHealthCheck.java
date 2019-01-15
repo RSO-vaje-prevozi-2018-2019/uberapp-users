@@ -3,6 +3,7 @@ package si.fri.rso.samples.customers.api.v1.health;
 import org.eclipse.microprofile.health.Health;
 import org.eclipse.microprofile.health.HealthCheck;
 import org.eclipse.microprofile.health.HealthCheckResponse;
+
 import org.eclipse.microprofile.health.HealthCheckResponseBuilder;
 import si.fri.rso.samples.customers.services.configuration.AppProperties;
 
@@ -16,6 +17,7 @@ public class MockHealthCheck implements HealthCheck {
     @Inject
     private AppProperties appProperties;
 
+    @Override
     public HealthCheckResponse call() {
 
         HealthCheckResponseBuilder healthCheckResponseBuilder =

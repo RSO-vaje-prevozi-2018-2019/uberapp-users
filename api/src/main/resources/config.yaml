@@ -18,6 +18,13 @@ kumuluzee:
 
       max-pool-size: 20
   health:
+    servlet:
+      mapping: /health
+      enabled: true
+    logs:
+      enabled: true
+      level: INFO
+      period-s: 30
     checks:
       data-source-health-check:
         jndi-name: jdbc/CustomerDS
